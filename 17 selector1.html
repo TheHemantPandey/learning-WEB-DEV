@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element slector */
+        div {
+            background-color: rgb(221, 224, 6);
+        }
+
+        /* class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* Id selector */
+        #blue {
+            background-color: rgb(99, 99, 207);
+        }
+
+        /* child selector */
+        div > p{
+            background-color: rgb(189, 175, 189);
+        }
+
+        /* Desendent selector */
+        div p{
+            background-color: rgb(102, 214, 108);
+        }
+
+        /* Universal selector */
+        *{
+            margin:1ch
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h2>
+
+        <div>
+            This is Element selector
+        </div>
+        <div>
+            This is Element selector
+        </div>
+        <div>
+            This is Element selector
+        </div>
+
+        <div class="red">
+            This is class selector
+        </div>
+
+        <div id="blue">
+            This is id selector
+        </div>
+
+        <div>
+            <p>
+                This is child selector bu due to p in article applied desendent
+            </p>
+        </div>
+
+        <div>
+            <article>
+                <p>
+                    This is desendent selector
+                </p>
+            </article>
+        </div>
+
+    </h2>
+</body>
+
+</html>

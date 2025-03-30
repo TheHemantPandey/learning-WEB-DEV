@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing units</title>
+    <style>
+        html{
+            font-size: 19px; /* for changing complete html size called root size */
+        }
+        .box{
+            border: 5px solid blue;
+             width: 350px; /* border size use width:100vw to adjust it accoring to the 100% of the monitor resolution */
+            background-color: rgb(71, 252, 0);
+            margin: auto; /* for centre */
+             box-sizing: border-box; /* assign as the system resolutin check by removing margin */
+        }
+        .class2{
+            margin: 10px;
+            background-color: rgb(233, 59, 59);
+            border: 10px solid;
+            width: 90vw;
+            height: 90vh;
+            font-size: 2em; /* for 2x of original(16px) size *?
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        i am a box
+    </div>
+    <div class="class2">
+        i am the second box. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aliquid aliquam ratione, voluptate necessitatibus officiis saepe at non expedita rem!
+    </div>
+</body>
+</html>

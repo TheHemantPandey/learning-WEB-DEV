@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity ny cascade algo</title>
+    <style>
+        .yellow {
+            color: yellow;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class=" yellow cred cpurple">This is how specificity decide in css</h1>
+        <h2>
+            this is one using cascade algotithm. here all of property is in class and purple is last in the css so
+            decided by last.
+            <br><br>
+            here is following ways <br>
+
+            <ol>
+                <li>position and order of apperance for same class,id.....</li>
+                <li>specificity as follows.. inline css, id selector, class or attribute, element selector and at last
+                    the universal selector.
+                    <br>
+                    and element selector is assign as " data-x="a" ". this previos word is used as class position and in
+                    css as .class position
+                </li>
+                <li>
+                    origin. it is decide by the browser
+                </li>
+                <li>
+                    and last is importance
+                </li>
+                <br>
+                one more thing that how the hell this specificity is decided
+                 <br><br>
+                 for universal selctor it is 0 <br>
+                 for element selector it is 1 <br>
+                 for class or attrinute selector it is 10 <br>
+                 for id selector it is 100 <br>
+                 and last for inline css it is 1000 <br> 
+                 and if important is after color:red then its specificity will be 10000
+                </table>
+            </ol>
+        </h2>
+    </div>
+</body>
+
+</html>

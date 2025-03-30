@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+
+        :root{
+            /* Global variables declaration */
+            --color: lightblue;
+            --seccolor: darkblue;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .list{
+            background-color: var(--color);
+        }
+        .lorem{
+            color: aliceblue;
+            background-color: var(--seccolor);
+        }
+        
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 22px;
+        }
+        ul li:first-child{
+            --color2: rgb(96, 197, 38);  /*  local variable*/
+             background-color: var(--color2,red);  /*here red is called call back and used when variable is not found */
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ul>
+    </div>
+    <div class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quasi sapiente praesentium dolores, quis perferendis nostrum, amet culpa deserunt ipsam nihil. Hic dolorem consequatur sed commodi.
+    </div>
+</body>
+</html>

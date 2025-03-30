@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            margin: 5px;
+            padding: 4px;
+            background-color: lightgreen;
+        }
+        .boxes{
+            display: flex;
+        }
+
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+            .box{
+                flex-direction: column;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis ipsum, dolor temporibus facere eos cupiditate autem dolorem assumenda vero maxime, rerum corrupti voluptate error numquam suscipit! Impedit perferendis expedita nobis quae qui pariatur adipisci deserunt, nemo ullam voluptas, officia harum, sunt aperiam inventore vero?
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div>
+        here is one more media query called orientation i will use that at the time of potrate.    </div>
+</body>
+</html>
